@@ -37,6 +37,13 @@ while(bruh):
             print(i/j)
             bruh = False
 
+        more = input("Do you have more questions?(Yes/No) ")
+        print("Only Yes or No question.")
+        if more == "Yes":
+            bruh = True
+        elif more == "No":
+            bruh = False
+
         else:
             raise Exception
     except Exception as e:
