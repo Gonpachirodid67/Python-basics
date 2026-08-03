@@ -37,8 +37,8 @@ while(bruh):
             print(i/j)
             bruh = False
 
-        more = input("Do you have more questions?(Yes/No) ")
         print("Only Yes or No question.")
+        more = input("Do you have more questions?(Yes/No) ")
         if more == "Yes":
             bruh = True
         elif more == "No":
