@@ -4,7 +4,7 @@ bruh = True
 
 while(bruh):
     try:
-        sui = (input("What is your question today (square roots/addition/subtraction/multiplication/division): ").lower())
+        sui = (input("What is your question today (square roots/addition/subtraction/multiplication/division/remainder): ").lower())
         if sui == "square roots":
             print("Write the number of the square root and by what power you want to multiply it by.")
             print("Only enter numbers or it wont work")
@@ -38,10 +38,10 @@ while(bruh):
             bruh = False
 
         print("Only Yes or No question.")
-        more = (input("Do you have more questions?(Yes/No) "))
-        if more == "Yes":
+        more = (input("Do you have more questions?(Yes/No) ").lower())
+        if more == "yes":
             bruh = True
-        elif more == "No":
+        elif more == "no":
             bruh = False
 
         else:
