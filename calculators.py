@@ -60,7 +60,7 @@ while(bruh):
                 bruh = True
             elif more == "no":
                 bruh = False
-        if calculator == "scientific":
+        elif calculator == "scientific":
             print("1. Square")
             print("2. Power")
             print("3. Sine")
@@ -78,6 +78,21 @@ while(bruh):
                 bruh = False
             elif options == "3":
                 angle = float(input("Enter angle: "))
-                print(math.sin(math.radians(angle)))
+                print("Answer: ", math.sin(math.radians(angle)))
+                bruh = False
             elif options == "4":
-                
+                angle = float(input("Enter angle: "))
+                print("Answer: ", math.cos(math.radians(angle)))
+                bruh = False
+            elif options == "5":
+                angle = float(input("Enter angle: "))
+                print("Answer: ", math.tan(math.radians(angle)))
+                bruh = False
+
+            print("Only Yes or No question.")
+            more = (input("Do you have more questions?(Yes/No) ").lower())
+            if more == "yes":                       
+                bruh = True
+            elif more == "no":
+                bruh = False
+        elif calculator == "graphing":
