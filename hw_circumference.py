@@ -1,0 +1,10 @@
+bruh = True
+while bruh:
+    try:
+        radius = float(input("Enter radius: "))
+        if radius > -99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 and radius < 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999:
+            print("Circumference: ", 2*3.14*radius)
+        else:
+            raise Exception
+    except Exception as e:
+        print("Invalid Input")
