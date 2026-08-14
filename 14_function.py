@@ -5,9 +5,9 @@
 def greet():
     print("Hello")
 
-greet()
+greet() # calling or executing the function
 
-# Functions with positional parameters
+# Functions with positional parameters - the arguments must follow the parameter order
 # Functions with default argument
 def greeting(name, greet_word="Hey"):
     print(f"{greet_word}, {name}")
@@ -60,3 +60,35 @@ def myFunction():
     return "Hello World!"
 
 print(myFunction())
+
+# Recursive function - Function calling itself
+# def printMyName(name):
+#   print(f"{name}")
+#   print("I am calling myself again")
+#   printMyName("Shlok Barai")
+
+# printMyName("Shlok Barai")
+
+# Recurrsion - factorial 
+# Finding the factorial of a number
+# 5 => 5*4*3*2*1 => 120
+# 10 => 10*9*8*7*6*5*4*3*2*1 => 3628800
+
+def calcFactorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * calcFactorial(n - 1)
+
+calcFactorial(10)
+calcFactorial(5)
+calcFactorial(0)
+
+def my_function():
+    """Demonstrates triple double qoutes
+    docstrings and does nothing really."""
+
+    return None
+
+print(my_function())
+print(my_function.__doc__)
