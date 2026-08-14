@@ -1,6 +1,7 @@
 # Functions
 
 # Basic Function
+# function syntax
 def greet():
     print("Hello")
 
